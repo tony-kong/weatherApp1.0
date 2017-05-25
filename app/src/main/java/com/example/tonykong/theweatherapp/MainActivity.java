@@ -138,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
 
-            if(s.contains("Error: Not Found city")){
+            if(s.contains("city not found") || s.equals("")){
                 pd.dismiss();
                 return;
             }
